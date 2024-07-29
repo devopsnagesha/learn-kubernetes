@@ -4,13 +4,12 @@ metadata:
   name: pod-04
 spec:
   containers:
-    #container reading the data
     - name: nginx
       image: nginx
       volumeMounts:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
-  initcontainers:
+  initContainers:
     - name: nginx-content
       image: nageshaab/join:v2
       volumeMounts:
