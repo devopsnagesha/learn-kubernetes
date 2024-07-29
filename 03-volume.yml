@@ -11,7 +11,7 @@ spec:
           mountPath: /usr/share/nginx/html
 
     - name: nginx-content
-      image: nageshaab/joinraghu:v1
+      image: nageshaab/joindevops:v1
       volumeMounts:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
