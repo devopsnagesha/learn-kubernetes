@@ -1,3 +1,3 @@
 FROM centos
-COPY run.sh
+COPY run.sh /
 ENTRYPOINT ["bash", "/run.sh"]
