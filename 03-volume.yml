@@ -10,7 +10,7 @@ spec:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
     - name: nginx-content
-      image: nageshaab/joindevops:v1
+      image: nageshaab/join:v1
       volumeMounts:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
