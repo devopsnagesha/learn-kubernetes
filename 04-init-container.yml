@@ -13,9 +13,8 @@ spec:
     - name: nginx-content
       image: nageshaab/join:v2
       volumeMounts:
-      - name: nginx-path
-        mountPath: /usr/share/nginx/html
+        - name: nginx-path
+          mountPath: /usr/share/nginx/html
   volumes:
     - name: nginx-path
       emptyDir: {}
-#
