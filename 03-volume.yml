@@ -4,16 +4,19 @@ metadata:
   name: pod-03
 spec:
   containers:
+#container reading the data
     - name: nginx
       image: nginx
       volumeMounts:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
+#container producing the data
     - name: nginx-content
       image: nageshaab/join:v1
       volumeMounts:
         - name: nginx-path
           mountPath: /usr/share/nginx/html
+#common volume/shared volume
   volumes:
     - name: nginx-path
       emptyDir: {}
